@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 
 <head>
   <!-- Basic -->
@@ -15,11 +15,9 @@
   <title>Fregg</title>
 
   <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
 
-
-  <!-- font wesome stylesheet -->
+  <!-- font awesome stylesheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   <!-- bootstrap core css -->
@@ -31,18 +29,90 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    /* Mengubah latar belakang menjadi gambar latar.png */
+    .hero_area {
+      background-image: url('images/latar.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Mengubah warna teks untuk beberapa elemen */
+    .navbar-nav .nav-link,
+    h1,
+    h2,
+    p {
+      color: black;
+    }
+
+    /* Warna navbar */
+    .navbar {
+      background-color: #7a748e !important;
+    }
+
+    .navbar-nav .nav-link {
+      color: white !important;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #f1f1f1 !important;
+    }
+
+    /* Mengubah warna tombol Hubungi Kami */
+    .btn-1 {
+      background-color: #7a748e !important;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 16px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .btn-1:hover {
+      background-color: #6a6376 !important;
+    }
+
+    /* Style untuk section tugas supaya latar belakangnya putih */
+    .task_section {
+      background-color: white;
+      padding: 60px 0; /* Biar ada jarak atas bawah */
+    }
+
+    /* Style untuk card tugas */
+    .task-card {
+      background-color: #7a748e;
+      color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 15px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Biar card kelihatan ngambang */
+    }
+
+    .task-card h4 {
+      margin-bottom: 15px;
+    }
+
+    .task-card p {
+      margin-bottom: 20px;
+    }
+  </style>
+
 </head>
 
-<body class="sub_page">
+<body>
   <div class="hero_area">
-    <!-- header section strats -->
+    <!-- header section starts -->
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
           <a class="navbar-brand mr-5" href="index.html">
             <img src="images/logo.png" alt="">
             <span>
-              Fregg
+              Chissy's World
             </span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -51,22 +121,22 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html"> Service </a>
-                </li>
+              <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="contact.html">Contact us</a>
+                  <a class="nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">Tentang Saya</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html">Tugas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Proyek</a>
                 </li>
               </ul>
               <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                <button class="btn my-2 my-sm-0 nav_search-btn" type="submit"></button>
               </form>
             </div>
           </div>
@@ -75,78 +145,49 @@
     </header>
     <!-- end header section -->
 
-  </div>
-
-
-  <div class="body_bg layout_padding">
-
-
-    <!-- contact section -->
-
-    <section class="contact_section">
+    <!-- task section -->
+    <section class="task_section">
       <div class="container">
-        <div class="heading_container">
-          <h2>
-            Let's Get In Touch!
-          </h2>
-        </div>
-      </div>
-      <div class="container contact_bg layout_padding2-top">
         <div class="row">
+          <!-- Card 1 -->
           <div class="col-md-6">
-            <div class="contact_form ">
-              <form action="">
-                <input type="text" placeholder="Name ">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Message" class="message_input">
-                <button>
-                  Send
-                </button>
-              </form>
+            <div class="task-card">
+              <h4>Website Portofolio</h4>
+              <p>Membuat website portofolio pribadi menggunakan HTML, CSS, dan JavaScript.</p>
+              <a href="" class="btn-1">Lihat Tugas</a>
             </div>
           </div>
+          <!-- Card 2 -->
           <div class="col-md-6">
-            <div class="img-box">
-              <img src="images/contact-img.jpg" alt="">
+            <div class="task-card">
+              <h4>Desain UI/UX Website Inventaris Sekolah</h4>
+              <p>Merancang desain website inventaris peminjaman barang Sekolah menggunakan Figma.</p>
+              <a href="" class="btn-1">Lihat Tugas</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Card 3 -->
+          <div class="col-md-6">
+            <div class="task-card">
+              <h4>Website Rental Baju Cosplay Online</h4>
+              <p>Mendesain website e-commerce sederhana untuk usaha kecil menggunakan Figma.</p>
+              <a href="" class="btn-1">Lihat Tugas</a>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-6">
+            <div class="task-card">
+              <h4>Brosur</h4>
+              <p>Membuat brosur penjualan makanan dengan software CorelDraw</p>
+              <a href="" class="btn-1">Lihat Tugas</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- end contact section -->
-
+    <!-- end task section -->
   </div>
-  <!-- info section -->
-
-  <section class="info_section layout_padding">
-    <div class="footer_contact">
-      <div class="heading_container">
-        <h2>
-          Contact Us
-        </h2>
-      </div>
-      <div class="box">
-        <a href="" class="img-box">
-          <img src="images/location.png" alt="" class="img-1">
-          <img src="images/location-o.png" alt="" class="img-2">
-        </a>
-        <a href="" class="img-box">
-          <img src="images/call.png" alt="" class="img-1">
-          <img src="images/call-o.png" alt="" class="img-2">
-        </a>
-        <a href="" class="img-box">
-          <img src="images/envelope.png" alt="" class="img-1">
-          <img src="images/envelope-o.png" alt="" class="img-2">
-        </a>
-      </div>
-    </div>
-
-
-  </section>
-
-
-  <!-- end info section -->
 
   <!-- footer section -->
   <section class="container-fluid footer_section">
