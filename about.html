@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Fregg</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- font awesome stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    .hero_area {
+      background-image: url('images/bekron.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    .hero_area::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .hero_area .header_section {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Gaya tambahan */
+    .about_section .img-box img {
+      width: 80%;
+      max-width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      margin: 0 auto;
+      display: block;
+    }
+
+    .about_section .detail-box a {
+      display: inline-block;
+      padding: 10px 25px;
+      background-color: #7a4fcf; /* ungu ala kuyomi */
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    .about_section .detail-box a:hover {
+      background-color: #5a35a4; /* ungu lebih gelap saat hover */
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand mr-5" href="index.html">
+            <img src="images/logo.png" alt="">
+            <span>
+              Fregg
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigasi">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Beranda</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="about.html">Tentang Saya</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html">Tugas</a> <!-- Ganti Keterampilan jadi Tugas -->
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Hubungi Saya</a>
+                </li>
+              </ul>
+              <form class="form-inline">
+                <button class="btn my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- about section -->
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Tentang Saya
+              </h2>
+            </div>
+            <p>
+              Ini adalah fakta yang sudah lama diketahui bahwa pembaca akan teralihkan perhatiannya oleh isi halaman
+              yang dapat dibaca saat melihat tata letaknya. Menggunakan Lorem Ipsum memberikan distribusi huruf yang
+              lebih normal, dibandingkan hanya menggunakan 'Isi di sini, isi di sini', sehingga membuatnya terlihat
+              seperti bahasa Indonesia yang dapat dibaca. Banyak paket penerbitan desktop dan editor halaman web yang
+              menggunakan Lorem Ipsum sebagai teks contoh.
+            </p>
+            <a href="">
+              Mulai
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/kuyomi.png" alt="Gambar Kuyomi">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding">
+    <div class="footer_contact">
+      <div class="heading_container">
+        <h2>
+          Hubungi Saya
+        </h2>
+      </div>
+      <div class="box d-flex justify-content-center">
+        <a href="https://github.com/yourusername" class="img-box mx-3" target="_blank">
+          <i class="fa fa-github" style="font-size:48px;color:black"></i>
+        </a>
+        <a href="https://linkedin.com/in/yourusername" class="img-box mx-3" target="_blank">
+          <i class="fa fa-linkedin" style="font-size:48px;color:#0077b5"></i>
+        </a>
+        <a href="https://instagram.com/yourusername" class="img-box mx-3" target="_blank">
+          <i class="fa fa-instagram" style="font-size:48px;color:#e4405f"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      Hak Cipta &copy; 2019 Seluruh Hak Dilindungi
+      <a href="https://html.design/">Free Html Templates</a>
+    </p>
+  </section>
+  <!-- end footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
